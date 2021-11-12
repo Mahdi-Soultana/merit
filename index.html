@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meirt || accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h1>Merit</h1>
+        <div class="burger">
+          <span class="bars none">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span> &times; </span>
+        </div>
+      </div>
+      <ul class="none">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="empty"></div>
+      <div class="content">
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/1" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/2" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/3" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/4" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/5" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/6" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/7" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/8" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/9" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/10" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/11" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/12" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/13" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/14" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/15" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/16" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/17" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/18" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/19" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+        <figure>
+          <div>
+            <img src="https://source.unsplash.com/random/20" alt="img" />
+          </div>
+          <h2>Home Is the most beautfull thing in Life</h2>
+        </figure>
+      </div>
+    </main>
+    <script>
+      let nav = document.querySelector("nav");
+      let ul = document.querySelector("nav ul");
+      let btnNav = nav.querySelector(".burger");
+      let barsIcon = nav.querySelector(".burger .bars");
+      let timesIcon = nav.querySelector(".burger span:last-child");
+      let h1 = document.querySelector("h1");
+      window.addEventListener("scroll", (e) => {
+        const isTrgetScrolled = window.pageYOffset > 100;
+        if (isTrgetScrolled) {
+          h1.classList.remove("add-style-logo");
+          nav.classList.add("add-shadow");
+        } else {
+          h1.classList.add("add-style-logo");
+          nav.classList.remove("add-shadow");
+        }
+      });
+      btnNav.addEventListener("click", () => {
+        barsIcon.classList.toggle("none");
+        timesIcon.classList.toggle("none");
+        ul.classList.toggle("none");
+      });
+      window.addEventListener("resize", (e) => {
+        console.log(e.target.innerWidth);
+        e.target.innerWidth > 800 &&
+          ul.classList.contains("none") &&
+          ul.classList.remove("none");
+        e.target.innerWidth < 800 && barsIcon.classList.add("none");
+        timesIcon.classList.remove("none");
+        ul.classList.remove("none");
+      });
+    </script>
+  </body>
+</html>
